@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Nuckle Regular';
+    src: url(/assets/fonts/Nuckle-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Nuckle Medium';
+    src: url(/assets/fonts/Nuckle-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Nuckle Semi Bold';
+    src: url(/assets/fonts/Nuckle-Semibold.ttf);
+}
+
+@font-face {
+    font-family: 'Nuckle Bold';
+    src: url(/assets/fonts/Nuckle-Bold.ttf);
+}
+
+body {
+    background: #ECF4FF;
+}
+
+header {
+    font-family: 'Nuckle Medium';
+    background: #FFFFFF;
+}
+
+.header_top {
+    display: flex;
+    gap: 220px;
+
+    select {
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+.nav__left--item:nth-child(1) button {
+    display: flex;
+    padding: 11px 31px;
+    background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.nav__left--item:nth-child(2) {
+    width: 396px !important;
+    height: 46px !important;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #E4E7EE !important;
+}
+
+.nav__left--item:nth-child(2) input {
+    border-radius: 12px 0 0 12px;
+}
+
+.search {
+    border-radius: 0 12px 12px 0;
+    font-size: 24px;
+    min-height: 46px !important;
+    display: block !important;
+}
+
+.nav__right--item:nth-child(1) {
+    display: flex;
+    gap: 80px;
+    margin-right: 59px;
+}
+
+.nav__right--item:nth-child(1) span {
+    padding: 12px;
+    background: #ECF4FF;
+    border-radius: 8px;
+    color: #0D63F3;
+}
+
+.nav__right--item:nth-child(2) button {
+    padding: 11px 31px;
+    background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
+    border-radius: 10px;
+}
+
+#intro {
+    padding-top: 40px;
+    margin-top: 100px;
+
+    img {
+        width: 100%;
+    }
+
+    .wrapper {
+        position: relative;
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: -70px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            top: 46%;
+        }
+
+        .carousel-control-prev {
+            left: -80px;
+            background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+        }
+
+        .carousel-control-next {
+            right: -80px;
+            background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+        }
+
+        .carousel-indicators button {
+            width: 20px !important;
+            height: 1px !important;
+            border-radius: 50%;
+            background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+        }
+    }
+
+}
+
+.active_1 {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%) !important;
+}
+
+#categories {
+    h1 {
+        font-family: 'Nuckle Semi Bold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        margin: 80px 0 20px 0;
+        color: #1E1E1E;
+    }
+
+    .card {
+        width: 155px;
+        height: 235px;
+        background: #FFFFFF;
+        border-radius: 10px;
+
+        p {
+            font-family: 'Nuckle Medium';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.01em;
+            color: #1E1E1E;
+        }
+    }
+
+    button {
+        padding: 14px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        width: 100%;
+        border: transparent;
+
+        a {
+            font-family: 'Nuckle Semi Bold';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1E1E1E;
+            text-decoration: none;
+            color: #000000;
+        }
+
+    }
+}
+
+#most_sold {
+    h1 {
+        font-family: 'Nuckle Semi Bold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        margin: 40px 0 20px 0;
+        color: #1E1E1E;
+    }
+
+    .card {
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 5px 10px;
+        }
+
+        .red {
+            background: #FF0101;
+            border-radius: 4px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+
+        .yellow {
+            background: #EB8528;
+            border-radius: 4px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+
+        .heart {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            color: silver;
+            cursor: pointer;
+        }
+
+        h5 {
+            font-family: 'Nuckle Semi Bold';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #0D63F3;
+        }
+
+        h6 {
+            font-family: 'Nuckle Medium';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #1E1E1E;
+            height: 51px;
+        }
+
+        p {
+            font-family: 'Nuckle Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6C757D;
+        }
+
+        .card_footer {
+            button {
+                padding: 10px 0px;
+                width: 130px;
+                background: #0D63F3;
+                border-radius: 8px;
+                border: transparent;
+                font-family: 'Nuckle Regular';
+                font-style: normal;
+                font-weight: 539;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.01em;
+                color: #FFFFFF;
+            }
+
+            i {
+                font-size: 16px;
+                color: #6C757D;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .button {
+        button {
+            border: transparent;
+            width: 100%;
+            padding: 14px 0;
+            background: #FFFFFF;
+
+            a {
+                text-decoration: none;
+                font-family: 'Nuckle Semi Bold';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #1E1E1E;
+            }
+        }
+    }
+}
+
+#brands {
+    h1 {
+        font-family: 'Nuckle Semi Bold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        color: #1E1E1E;
+        padding: 60px 0 20px 0;
+    }
+
+    .brand {
+        padding: 5px 49px;
+        background-color: #FFFFFF;
+        width: 188px;
+    }
+}
+
+#dream_home {
+    position: relative;
+    margin: 60px auto;
+
+    img {
+        width: 100%;
+    }
+
+    .wrapper {
+        position: relative;
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: -70px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            top: 46%;
+        }
+
+        .carousel-control-prev {
+            left: -80px;
+            background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+        }
+
+        .carousel-control-next {
+            right: -80px;
+            background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+        }
+
+        .carousel-indicators button {
+            width: 20px !important;
+            height: 1px !important;
+            border-radius: 50%;
+            background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+        }
+    }
+}
+
+#famous {
+    h1 {
+        font-family: 'Nuckle Semi Bold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        margin: 40px 0 20px 0;
+        color: #1E1E1E;
+    }
+
+    .card {
+        position: relative;
+
+        .heart {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            color: silver;
+            cursor: pointer;
+        }
+
+        h5 {
+            font-family: 'Nuckle Semi Bold';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #0D63F3;
+        }
+
+        h6 {
+            font-family: 'Nuckle Medium';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #1E1E1E;
+            height: 51px;
+        }
+
+        p {
+            font-family: 'Nuckle Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6C757D;
+        }
+
+        .card_footer {
+            button {
+                padding: 10px 0px;
+                width: 130px;
+                background: #0D63F3;
+                border-radius: 8px;
+                border: transparent;
+                font-family: 'Nuckle Regular';
+                font-style: normal;
+                font-weight: 539;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.01em;
+                color: #FFFFFF;
+            }
+
+            i {
+                font-size: 16px;
+                color: #6C757D;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .button {
+        button {
+            border: transparent;
+            width: 100%;
+            padding: 14px 0;
+
+            a {
+                text-decoration: none;
+                font-family: 'Nuckle Semi Bold';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #1E1E1E;
+            }
+        }
+    }
+}
+
+#shops {
+    h1 {
+        font-family: 'Nuckle Semi Bold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        color: #1E1E1E;
+        margin-bottom: 20px;
+    }
+
+    .shops_wrapper {
+        margin-bottom: 80px;
+    }
+
+    .shop_card {
+        padding: 5px 49px;
+        background: #FCFFFC;
+        border-radius: 8px;
+    }
+}
+
+footer {
+    padding: 60px 185px 39px 185px;
+    background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
+
+    h1 {
+        font-family: 'Nuckle Semi Bold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #1E1E1E;
+    }
+
+    a,
+    p {
+        font-family: 'Nuckle Medium';
+        text-decoration: none;
+        color: #1E1E1E;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    .hr {
+        margin: 40px 0;
+        height: 1px;
+        background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+    }
+
+}

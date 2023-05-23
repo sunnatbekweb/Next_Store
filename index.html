@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next store</title>
+    <!-- Icon -->
+    <link rel="icon" href="/assets/icons/Logo.svg">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+Display:wght@400;500&family=Open+Sans&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header class="shadow position-fixed top-0 z-3 w-100">
+        <div class="container">
+            <div class="header_top d-flex justify-content-end align-items-center m-1">
+                <div class="for_contact d-flex justify-content-center column-gap-2">
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="#" class="m-0">Aloqa uchun</a>
+                </div>
+
+                <select name="language" class="border-0 language" id="0">
+                    <option value="1">UZ</option>
+                    <option value="2">RU</option>
+                    <option value="3">ENG</option>
+                </select>
+            </div>
+
+            <nav class="nav d-flex align-items-center justify-content-between">
+                <a href="#"><img src="/assets/icons/Logo.svg" alt="Nav Logo"></a>
+
+                <ul class="nav__left d-flex list-unstyled gap-2 mb-0">
+                    <li class="nav__left--item d-flex align-items-center">
+                        <button class="btn btn-primary border-0">
+                            <i class="bi bi-list"></i> <span>Katalog</span>
+                        </button>
+                    </li>
+
+                    <li class="nav__left--item d-flex align-items-center ms-5 border border-dark">
+                        <input type="search" class="form-control w-100 border-0 p-3" placeholder="Maxsulotlarni izlash">
+
+                        <button class="btn btn-primary search p-3">
+                            <i class="bi bi-search p-2"></i>
+                        </button>
+                    </li>
+                </ul>
+
+                <ul class="nav__right d-flex list-unstyled mb-0">
+                    <li class="nav__right--item d-flex align-items-center">
+                        <span><i class="bi bi-heart p-2"></i></span>
+                        <span><i class="bi bi-cart3 p-2"></i></span>
+                    </li>
+
+                    <li class="nav__right--item p-3">
+                        <button class="btn border-0">Kirish</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <div class="wrapper">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators gap-2">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/header_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/header_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/header_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/header_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/header_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories">
+        <div class="container">
+            <h1>Kategoriyalar</h1>
+            <div class="row row-cols-8 row-cols-8 g-4">
+                <div class="col p-0">
+                    <div class="card border-0">
+                        <img src="/assets/images/image_1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-center">Smartfonlar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="card border-0">
+                        <img src="/assets/images/image_2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-center">Kompyuterlar va notebooklar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="card border-0">
+                        <img src="/assets/images/image_3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-center">Televizorlar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="card border-0">
+                        <img src="/assets/images/image_4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-center">Aqlli soatlar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="card border-0">
+                        <img src="/assets/images/image_5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-center">Quloqchinlar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="card border-0">
+                        <img src="/assets/images/image_6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-center">Konditsioner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="card border-0">
+                        <img src="/assets/images/image_7.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-center">Sovutkichlar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="card border-0">
+                        <img src="/assets/images/image_8.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-center">Kir yuvish mashinalari</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="most_sold">
+        <div class="container d-flex gap-4 flex-column">
+            <h1>Eng ko’p sotilgan</h1>
+
+            <div class="row row-cols-1 row-cols-5 g-4">
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6>Apple Airpods Pro simsiz quloqchin , Oq rangda</h6>
+                            <p class="card-text">1230 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <span class="red">Top sale</span>
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">16 114 285 so'm</h5>
+                            <h6>Apple Macbook Pro 13" 2.4 2019 Intel core i5 DDR3 8 GB SSD 256 GB</h6>
+                            <p class="card-text">230 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <span class="yellow">Yangilik</span>
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">4 234 000 so’m</h5>
+                            <h6>Apple watch 4</h6>
+                            <p class="card-text">543 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">1 340 000 so’m</h5>
+                            <h6>Robot - tozalagich Xiaomi Mi Robot</h6>
+                            <p class="card-text">876 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <span class="yellow">Yangilik</span>
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">1 345 000 so’m</h5>
+                            <h6>Oynali Fotoaparat Canon EOS 6D Body</h6>
+                            <p class="card-text">565 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <span class="yellow">Yangilik</span>
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6>Apple Airpods Pro simsiz quloqchin , Oq rangda</h6>
+                            <p class="card-text">1230 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">16 114 285 so'm</h5>
+                            <h6>Apple Macbook Pro 13" 2.4 2019 Intel core i5 DDR3 8 GB SSD 256 GB</h6>
+                            <p class="card-text">230 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">4 234 000 so’m</h5>
+                            <h6>Apple watch 4</h6>
+                            <p class="card-text">543 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <span class="red">Top sale</span>
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">1 340 000 so’m</h5>
+                            <h6>Robot - tozalagich Xiaomi Mi Robot</h6>
+                            <p class="card-text">876 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">1 345 000 so’m</h5>
+                            <h6>Oynali Fotoaparat Canon EOS 6D Body</h6>
+                            <p class="card-text">565 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button col-12 text-center">
+                <button><a href="#">Ko’proq ko’rish</a></button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="dream_home">
+        <div class="container">
+            <div class="wrapper">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators gap-2">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/more_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/more_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/more_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="famous">
+        <div class="container d-flex flex-column gap-4">
+            <h1>Eng ommabop</h1>
+            <div class="row row-cols-1 row-cols-5 g-4">
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6>Apple Airpods Pro simsiz quloqchin , Oq rangda</h6>
+                            <p class="card-text">1230 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">16 114 285 so'm</h5>
+                            <h6>Apple Macbook Pro 13" 2.4 2019 Intel core i5 DDR3 8 GB SSD 256 GB</h6>
+                            <p class="card-text">230 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">4 234 000 so’m</h5>
+                            <h6>Apple watch 4</h6>
+                            <p class="card-text">543 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">1 340 000 so’m</h5>
+                            <h6>Robot - tozalagich Xiaomi Mi Robot</h6>
+                            <p class="card-text">876 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">1 345 000 so’m</h5>
+                            <h6>Oynali Fotoaparat Canon EOS 6D Body</h6>
+                            <p class="card-text">565 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6>Apple Airpods Pro simsiz quloqchin , Oq rangda</h6>
+                            <p class="card-text">1230 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">16 114 285 so'm</h5>
+                            <h6>Apple Macbook Pro 13" 2.4 2019 Intel core i5 DDR3 8 GB SSD 256 GB</h6>
+                            <p class="card-text">230 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">4 234 000 so’m</h5>
+                            <h6>Apple watch 4</h6>
+                            <p class="card-text">543 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">1 340 000 so’m</h5>
+                            <h6>Robot - tozalagich Xiaomi Mi Robot</h6>
+                            <p class="card-text">876 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-0">
+                        <i class="bi bi-heart heart"></i>
+                        <img src="/assets/images/laptop_img.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">1 345 000 so’m</h5>
+                            <h6>Oynali Fotoaparat Canon EOS 6D Body</h6>
+                            <p class="card-text">565 ta buyurtma</p>
+                            <div class="card_footer d-flex justify-content-between align-items-center">
+                                <button>Sotib olish</button>
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button col-12 text-center bg-light">
+                <button class="btn_more bg-light"><a href="#">Ko’proq ko’rish</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="brands">
+        <div class="container">
+            <h1>Brendlar bo’yicha</h1>
+            <div class="row d-flex gap-4 row-cols-6">
+                <div class="brand col">
+                    <img src="/assets/icons/hp.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/acer.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/asus.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/samsung.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/apple.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/msi.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/mi.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/vivo.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/unknown.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/unknown.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/unknown.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col">
+                    <img src="/assets/icons/unknown.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col-2">
+                    <img src="/assets/icons/unknown.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col-2">
+                    <img src="/assets/icons/unknown.svg" alt="Brand logo">
+                </div>
+
+                <div class="brand col-2">
+                    <img src="/assets/icons/unknown.svg" alt="Brand logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dream_home">
+        <div class="container">
+            <div class="wrapper">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators gap-2">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/more_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/more_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/more_img.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="shops">
+        <div class="container">
+            <h1>Do’konlarimiz</h1>
+
+            <div class="shops_wrapper row d-flex gap-4">
+                <div class="shop_card col">
+                    <img src="/assets/icons/elmakon.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/texnomart.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/sandiq.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/goodzone.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/unknown.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/unknown.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/unknown.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/unknown.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/unknown.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/unknown.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/unknown.svg" alt="shop logo">
+                </div>
+
+                <div class="shop_card col">
+                    <img src="/assets/icons/unknown.svg" alt="shop logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer_wrapper d-flex justify-content-between gap-5">
+                <div class="left d-flex gap-5">
+                    <div class="footer_card d-flex flex-column gap-2 mx-4">
+                        <h5>Hujjatlar</h5>
+                        <a href="" class="footer--item">Umumiy shartlar</a>
+                        <a href="" class="footer--item">Ofertalar arxivi</a>
+                        <a href="" class="footer--item">Nizom</a>
+                        <a href="" class="footer--item">Guvohnoma</a>
+                    </div>
+
+                    <div class="footer_card d-flex flex-column gap-2 mx-4">
+                        <h5>Servis</h5>
+                        <a href="" class="footer--item">Do’konlar</a>
+                        <a href="" class="footer--item">Biz haqimizda</a>
+                        <a href="" class="footer--item">Hamkorlik uchun</a>
+                        <a href="" class="footer--item">Qaytarish</a>
+                        <a href="" class="footer--item">Qaytarish</a>
+                    </div>
+
+                    <div class="footer_card d-flex flex-column gap-2 mx-4">
+                        <h5>Mahsulotlar katalogi</h5>
+                        <a href="" class="footer--item">Katalog 1</a>
+                        <a href="" class="footer--item">Katalog 1</a>
+                        <a href="" class="footer--item">Katalog 2</a>
+                        <a href="" class="footer--item">Katalog 2</a>
+                        <a href="" class="footer--item">Katalog 3</a>
+                        <a href="" class="footer--item">Katalog 3</a>
+                    </div>
+                </div>
+
+                <div class="footer_card d-flex flex-column gap-2">
+                    <h5>Axborot xizmati</h5>
+                    <a href="" class="footer--item">contact.@nextstore.uz</a>
+                    <a href="" class="footer--item">+998 97 712 96 96 <br>+998 95 503 09 09</a>
+                    <a href="" class="footer--item">Sag’bon 186, Olmazor tumani, Toshkent, <br> O'zbekiston</a>
+                    <div class="social d-flex gap-3 mt-3">
+                        <img src="/assets/icons/facebook.svg" alt="social icon">
+                        <img src="/assets/icons/instagram.svg" alt="social icon">
+                        <img src="/assets/icons/telegram.svg" alt="social icon">
+                        <img src="/assets/icons/tiktok.svg" alt="social icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="footer_bottom d-flex justify-content-between">
+                <p>2022 Nextstore.com</p>
+
+                <p>Powered by</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Bootstrap script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+</html>
